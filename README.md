@@ -8,10 +8,16 @@ An AI based feedback collection and management system for Growing Businesses
 
 Note: The following steps are valid for only Windows OS
 
+Prerequisites:
+
+- `npm`
+- `pip`
+- `ollama`
+
 Start with Cloning the repository
 
 ```bash
-git clone https://github.com/Avinash-Acharya/Feed-tBack.git
+git clone https://github.com/Avinash-Acharya/FeeditBack.git
 ```
 
 Navigate to the Root folder and install the necessary node packages
@@ -35,6 +41,12 @@ pip install -r requirements.txt
 ```
 
 Create a `.env` file in the Root folder and add a field `TIDB_DATABASE_URL` and enter the TiDB Connection String which looks like `mysql+pymysql://{TIDB_USER}:{TIDB_PASSWORD}@{TIDB_HOST}:{TIDB_PORT}/{TIDB_DB_NAME}?ssl_verify_cert=True&ssl_verify_identity=True`
+
+We will use ollama to run LLM models locally, So Install Ollama from [here](https://ollama.com/) and run the below command
+
+```bash
+ollama pull phi3:3.8b-mini-128k-instruct-q4_K_M
+```
 
 Then run this Command in the Root folder
 

@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request, Response, send_file
 from customer import Customer_fit
-from predictHate import predict
+# from predictHate import predict
 from retrieval import generate_feedback
+from openaii import get_openai_client
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -25,6 +26,17 @@ def get_response():
     filename = f"feedback_{start_date}_{end_date}.pdf"
     pdf_filename = generate_feedback(start_date, end_date)
     return send_file(pdf_filename, mimetype='application/pdf', as_attachment=True, download_name=filename)
+
+@app.route('/api/admin/openaiFeedback', methods=['POST'])
+def get_openairesponse():
+    data = request.json
+    start_date = data.get('from')
+    end_date = data.get('to')
+    key = data.get('key')
+    filename = f"feedback_{start_date}_{end_date}.pdf"
+    pdf_filename = get_openai_client(start_date, end_date , key)
+    return send_file(pdf_filename, mimetype='application/pdf', as_attachment=True, download_name=filename)
+
 
 # @app.route('/api/predict', methods=['POST'])
 # def predict():
