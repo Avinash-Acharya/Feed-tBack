@@ -1,10 +1,10 @@
-### {Feed!tBack}
+# {Feed!tBack}
 
 A feedback collection and management system for Growing Businesses
 
 ## Getting Started
 
-# Local Development
+### Local Development
 
 Start with Cloning the repository
 
