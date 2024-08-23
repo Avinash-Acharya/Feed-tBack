@@ -26,11 +26,11 @@ def get_response():
     pdf_filename = generate_feedback(start_date, end_date)
     return send_file(pdf_filename, mimetype='application/pdf', as_attachment=True, download_name=filename)
 
-@app.route('/api/predict', methods=['POST'])
-def predict():
-    data = request.json
-    res = predict(data)
-    return jsonify({'prediction': res})
+# @app.route('/api/predict', methods=['POST'])
+# def predict():
+#     data = request.json
+#     res = predict(data)
+#     return jsonify({'prediction': res})
 
 if __name__ == '__main__':
     app.run()

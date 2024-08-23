@@ -33,7 +33,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               A feedback collection and management system for Growing
-              businesses.
+              Businesses.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
