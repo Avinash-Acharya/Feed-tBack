@@ -87,7 +87,7 @@ By running them each separately
 Run the Nextjs development server
 
 ```bash
-npm run dev2
+npm run next-dev
 ```
 
 And finall run Flask server in the /api folder
