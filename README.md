@@ -2,6 +2,8 @@
 
 An AI based feedback collection and management system for Growing Businesses
 
+![Process-Flow/Architecture Diagram](TiDB_FeedItBack.jpg)
+
 ## Getting Started
 
 ### Local Development
