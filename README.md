@@ -3,12 +3,13 @@
 An AI based feedback collection and management system for Growing Businesses
 
 ![Process-Flow/Architecture Diagram](TiDB_FeedItBack.jpg)
+_Figure 1: Process-Flow/Architecture Diagram_
 
 ## Getting Started
 
 ### Local Development
 
-Note: The following steps are valid for only Windows OS
+**Note**: The following steps are valid for only Windows OS
 
 Prerequisites:
 
@@ -100,3 +101,14 @@ python app.py
 Now we got both Nextjs and Flask running on port [http://localhost:3000](http://localhost:3000) and [http://127.0.0.1:5000](http://127.0.0.1:5000) respectively.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Images
+
+[Home Page](home.jpg)
+_Figure 2: Home Page_
+
+[Customer Page](customer.jpg)
+_Figure 3: Customer Page_
+
+[Admin Page](admin.gif)
+_Figure 4: Admin Page_
