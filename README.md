@@ -104,11 +104,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Images
 
-[Home Page](home.jpg)
+![Home Page](home.jpg)
 _Figure 2: Home Page_
 
-[Customer Page](customer.jpg)
+![Customer Page](customer.jpg)
 _Figure 3: Customer Page_
 
-[Admin Page](admin.gif)
+![Admin Page](admin.gif)
 _Figure 4: Admin Page_
