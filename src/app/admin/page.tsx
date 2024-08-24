@@ -75,11 +75,11 @@ const Page = () => {
         {"}"}
       </h1>
       <div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center mb-3 space-x-2">
           <Switch
             id="Offline-mode"
-            // checked={isOfflineMode}
-            onChange={() => setIsOfflineMode(!isOfflineMode)}
+            checked={isOfflineMode}
+            onCheckedChange={() => setIsOfflineMode(!isOfflineMode)}
           />
           <Label htmlFor="Offline-mode">Offline Mode</Label>
         </div>
