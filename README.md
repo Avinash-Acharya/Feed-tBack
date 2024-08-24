@@ -50,13 +50,46 @@ We will use ollama to run LLM models locally, So Install Ollama from [here](http
 ollama pull phi3:3.8b-mini-128k-instruct-q4_K_M
 ```
 
-Then run this Command in the Root folder
+Note : We even provide an option for openAPI key intigration on Admin page, So you can skip running Ollama locally.
+
+###Running Devlopment Server
+You can achieve this in two ways:
+
+**First:**
+By running a single command which runs both Nextjs and Flask server
 
 ```bash
-npm run dev
+npm run final
 ```
 
-And finall run this Command in the /api folder
+Note: Wait till the below message shows up
+
+```bash
+[0]   ▲ Next.js 14.2.4
+[0]   - Local:        http://localhost:3000
+[0]   - Environments: .env
+[0]
+[0]  ✓ Starting...
+[0]  ✓ Ready in 6.8s
+[1]  * Serving Flask app 'index'
+[1]  * Debug mode: off
+[1] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+[1]  * Running on http://127.0.0.1:5000
+[1] Press CTRL+C to quit
+```
+
+**OR**
+
+**Second:**
+By running them each separately
+
+Run the Nextjs development server
+
+```bash
+npm run dev2
+```
+
+And finall run Flask server in the /api folder
 
 ```bash
 cd api

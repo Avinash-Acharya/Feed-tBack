@@ -1,4 +1,4 @@
-from api.openaii import OpenAI
+from openai import OpenAI
 from langchain_community.vectorstores import TiDBVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
 from fpdf import FPDF
