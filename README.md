@@ -52,7 +52,8 @@ ollama pull phi3:3.8b-mini-128k-instruct-q4_K_M
 
 Note : We even provide an option for openAPI key intigration on Admin page, So you can skip running Ollama locally.
 
-###Running Devlopment Server
+### Running Devlopment Server
+
 You can achieve this in two ways:
 
 **First:**
