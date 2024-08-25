@@ -95,7 +95,7 @@ And finall run Flask server in the /api folder
 
 ```bash
 cd api
-python app.py
+python index.py
 ```
 
 Now we got both Nextjs and Flask running on port [http://localhost:3000](http://localhost:3000) and [http://127.0.0.1:5000](http://127.0.0.1:5000) respectively.
